@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart 🛒</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background: #f0fdf4;
+    }
+    h1 {
+      color: #065f46;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cart-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+    }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background: #065f46;
+      color: #fff;
+    }
+    .total {
+      text-align: right;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .btn {
+      background: #16a34a;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: #15803d;
+    }
+    .empty {
+      text-align: center;
+      font-size: 1.25rem;
+      color: #666;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛒 Your Shopping Cart</h1>
+  <div class="cart-container" id="cartContainer"></div>
+
+  <script>
+    function loadCart() {
+      const cart = JSON.parse(localStorage.getItem("abi_cart")) || [];
+      const container = document.getElementById("cartContainer");
+
+      if (cart.length === 0) {
+        container.innerHTML = "<div class='empty'>Your cart is empty 😔</div>";
+        return;
+      }
+
+      let total = 0;
+      let html = `
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      cart.forEach(item => {
+        const priceNum = parseInt(item.price.replace(/[^0-9]/g, ""));
+        const subtotal = priceNum * item.qty;
+        total += subtotal;
+
+        html += `
+          <tr>
+            <td>${item.name}</td>
+            <td>${item.price}</td>
+            <td>${item.qty}</td>
+            <td>₹${subtotal.toLocaleString()}</td>
+          </tr>
+        `;
+      });
+
+      html += `
+          </tbody>
+        </table>
+        <div class="total">Total: ₹${total.toLocaleString()}</div>
+        <button class="btn" onclick="checkoutWhatsApp()">Order on WhatsApp</button>
+      `;
+      container.innerHTML = html;
+    }
+
+    function checkoutWhatsApp() {
+      const cart = JSON.parse(localStorage.getItem("abi_cart")) || [];
+      if (cart.length === 0) return alert("Cart is empty!");
+
+      let message = "🛍️ My Order:\n\n";
+      cart.forEach(item => {
+        message += `${item.name} - Qty: ${item.qty}\n`;
+      });
+      const total = document.querySelector(".total").textContent;
+      message += `\n${total}`;
+
+      const phone = "919344715650"; // 🔁 change to your number
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+
+    loadCart();
+  </script>
+</body>
+</html>

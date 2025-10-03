@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abi Sweets & Savouries - Made with Love, Packed with Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                            <line x1="6" x2="18" y1="17" y2="17"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ABI</h1>
+                        <p>Sweets & Savouries</p>
+                    </div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#specialties">Specialties</a>
+                    <a href="#contact">Contact</a>
+                    <a href="cart.html" class="btn">🛒 View Cart</a>
+                </nav>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#specialties">Specialties</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">Homemade • Fresh • Authentic</div>
+                    <h2 class="hero-title">
+                        Made with Love,<br />
+                        <span class="gradient-text">Packed with Care</span>
+                    </h2>
+                    <p class="hero-description">
+                        Experience the authentic taste of traditional Indian sweets and savouries,
+                        crafted with passion and served with love.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/919344715650" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>Order on WhatsApp</span>
+                        </a>
+                        <a href="#specialties" class="btn btn-secondary">
+                            <span>View Menu</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-background"></div>
+                    <img src="image/1.jpg" alt="Abi Sweets & Savouries">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                            <line x1="6" x2="18" y1="17" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Made with Love</h3>
+                    <p>Every item prepared with care and tradition</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3>Quality Ingredients</h3>
+                    <p>Only the finest, freshest ingredients</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Fresh Daily</h3>
+                    <p>Prepared fresh to ensure best taste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Your Feedback is Our Sweetest Ingredient</h2>
+                <p>
+                    At Abi Sweets & Savouries, we believe in preserving traditional recipes while
+                    creating memorable experiences. Every sweet and savory item is crafted with
+                    premium ingredients and decades of culinary expertise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Specialties</h2>
+                <p>Crafted with tradition, served with passion</p>
+            </div>
+
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">🍬</div>
+                    <h3>Traditional Sweets</h3>
+                    <p>Authentic homemade Indian sweets</p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🥟</div>
+                    <h3>Savory Snacks</h3>
+                    <p>Crispy and flavorful delicacies</p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">🎉</div>
+                    <h3>Festive Specials</h3>
+                    <p>Custom orders for celebrations</p>
+                </div>
+
+                <div class="specialty-card">
+                    <div class="specialty-icon">📦</div>
+                    <h3>Bulk Orders</h3>
+                    <p>Perfect for events and parties</p>
+                </div>
+            </div>
+
+            <div class="bulk-orders-banner">
+                We Also Take Bulk & Festive Orders
+            </div>
+        </div>
+    </section>
+    <!-- Product container (JS will generate the products dynamically) -->
+<div id="product-sections-placeholder"></div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you and serve your needs</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>WhatsApp Orders</h3>
+                            <a href="https://wa.me/919344715650" class="contact-link">+91 93447 15650</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Follow Us on Instagram</h3>
+                            <a href="https://instagram.com/abi_sweets_savouries_online" target="_blank" rel="noopener noreferrer" class="contact-link instagram-link">@abi_sweets_savouries_online</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p class="address">
+                                No:8, CBI Colony, 2nd Cross,<br />
+                                Vijayanagaram, Medavakkam,<br />
+                                Chennai - 600100
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qr-section">
+                    <div class="qr-code">
+                        <img src="image/4da4bab7f74636824014f25c3b4eea49.png" alt="Scan QR Code">
+                    </div>
+                    <div class="qr-text">
+                        <p class="qr-title">Scan to Order</p>
+                        <p class="qr-subtitle">Quick access to our WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/>
+                            <line x1="6" x2="18" y1="17" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>ABI Sweets & Savouries</h3>
+                </div>
+                <p class="footer-tagline">Made with Love, Packed with Care</p>
+                <div class="social-links">
+                    <a href="https://wa.me/919344715650" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"/>
+                            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/abi_sweets_savouries_online" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="copyright">© 2025 Abi Sweets & Savouries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919344715650" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"/>
+            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/>
+        </svg>
+    </a><!-- 🔐 Login Button in Navbar -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector('.nav-desktop') || document.querySelector('.nav-mobile');
+  if (nav) {
+    const loginBtn = document.createElement('a');
+    loginBtn.href = "#";
+    loginBtn.textContent = "Login / Signup";
+    loginBtn.id = "loginOpenBtn";
+    nav.appendChild(loginBtn);
+  }
+});
+</script>
+
+<!-- 🔐 Login Modal -->
+<div id="loginModal" class="login-modal">
+  <div class="login-content">
+    <span class="close-login" id="closeLogin">&times;</span>
+    <h2>Login / Signup</h2>
+    <form id="loginForm">
+      <label>Name</label>
+      <input type="text" id="loginName" placeholder="Your name" required>
+      <label>Email</label>
+      <input type="email" id="loginEmail" placeholder="Your email" required>
+      <label>Password</label>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit" class="login-btn">Continue</button>
+    </form>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
